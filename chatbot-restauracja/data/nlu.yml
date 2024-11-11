@@ -1,0 +1,210 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - welcome
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: check_opening_hours
+  examples: |
+    - What time does the restaurant open?
+    - Can you tell me the opening hours for the restaurant?
+    - When does the restaurant start serving?
+    - What are the hours of operation for this restaurant?
+    - Until what time is the restaurant open today?
+    - Do you have the schedule for the restaurant's opening times?
+    - What are the restaurant's business hours?
+    - When can I come to dine at the restaurant?
+    - Is the restaurant open now, and if not, when will it open?
+    - Can you let me know the restaurant's opening and closing times?
+
+- intent: ask_if_is_restaurant_open_at
+  examples: |
+    - Is the restaurant open at [6 PM](request_time)?
+    - Does the restaurant stay open until [3 AM](request_time)?
+    - Can I come to the restaurant at [13:00](request_time)?
+    - Will the restaurant be open at [6:00](request_time)?
+    - Are you open for dinner at [5 PM](request_time)?
+    - Is it possible to dine at the restaurant at [1 PM](request_time)?
+    - Are you serving guests at [6 AM](request_time)?
+    - Can I make a reservation for [7 AM](request_time)?
+    - What time do you close? Will you be open at [3 PM](request_time)?
+    - Is the restaurant still open when it’s [2 PM](request_time)?
+    - Is the restaurant open on [Monday](request_day) at [1:00 PM](request_time)?
+    - Can I come to the restaurant on [Tuesday](request_day) at [2:00 PM](request_time)?
+    - Will the restaurant be open at [3:00 PM](request_time) on [Wednesday](request_day)?
+    - What are the opening hours of the restaurant on [Thursday](request_day) at [4:00 PM](request_time)?
+    - Is the restaurant available on [Friday](request_day) at [5:00 PM](request_time)?
+    - Can I have a meal at the restaurant on [Saturday](request_day) at [6:00 PM](request_time)?
+    - Is the restaurant open at [6:00 PM](request_time) on [Sunday](request_day)?
+    - Can I book a table on [Monday](request_day) at [7:00 PM](request_time)?
+    - Does the restaurant accept guests on [Tuesday](request_day) at [8:00 PM](request_time)?
+    - Is the restaurant open for customers at [9:00 PM](request_time) on [Thursday](request_day)?
+
+- lookup: request_day
+  examples: |
+    - monday
+    - tuesday
+    - wednesday
+    - thrusday
+    - friday
+    - saturday
+    - sunday
+
+- lookup: request_time
+  examples: |
+    - 1 AM
+    - 2 AM
+    - 13:00
+    - 13:30
+    - 14:00
+    - 14:30
+    - 1 PM
+    - 2 PM
+    - 1:00
+    - 2:00
+
+- intent: ask_for_menu
+  examples: |
+    - Could I see the menu, please?
+    - What options do you have on the menu?
+    - Can you show me the menu?
+    - Do you have a menu I can look at?
+    - What dishes are available today?
+    - Could you provide me with the menu?
+    - Can I take a look at your menu?
+    - What are your menu offerings?
+    - Is there a menu I can check out?
+    - Could you tell me what’s on the menu?
+
+- intent: place_order
+  examples: |
+    - I would like to order a [Lasagne](request_dish) [with mashed potatoes](additional_stuff). And for my companions, please order the same for [3 people](num_of_orders).
+    - I would like to order a [vegetable stir-fry](request_dish). Can you recommend any sides? And please order the same for [2 companions](num_of_orders).
+    - I would like to order a [beef steak](request_dish) [with steamed broccoli](additional_stuff). What would you suggest for my companions? Please order the same for [4 people](num_of_orders).
+    - Can I order a [spaghetti carbonara](request_dish) [with garlic bread](additional_stuff)? And for my companions, please order the same for [2 people](num_of_orders).
+    - I would like to order a [chicken curry](request_dish) [with basmati rice](additional_stuff). For my companions, please order the same for [2 people](num_of_orders), but if possible, make it [extra spicy](additional_stuff).
+    - Do you have [lamb chops](request_dish)? I would like to order that [with roasted vegetables](additional_stuff). And for my companions, please order the same for [4 people](num_of_orders).
+    - I would like to order a [pasta primavera](request_dish), but please make it [without cheese](additional_stuff). And for my companions, please order the same for [3 people](num_of_orders).
+    
+- lookup: request_dish
+  examples: |
+    - lasagne
+    - pizza
+    - hot-dog
+    - burger
+    - spaghetti
+    - tiramisu
+    - beef steak
+    - lamb chops
+    - lamb
+    - beef
+    - pasta
+    - pasta primavera
+
+- lookup: num_of_orders
+  examples: |
+    - 2
+    - 3
+    - 5
+    - 10
+
+- lookup: additional_stuff
+  examples: |
+    - without cheese
+    - with cheese
+    - extra hot
+    - less hot
+    - with roasted vegetables
+    - with basmati rice
+    - with steamed broccoli
+    - without broccoli
+    - without tomatoes
+    - without potatoes
+    - without salt

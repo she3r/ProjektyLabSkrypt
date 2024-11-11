@@ -1,0 +1,83 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - check_opening_hours
+  - ask_if_is_restaurant_open_at
+  - ask_for_menu
+  - place_order
+
+entities:
+  - request_time
+  - request_day
+  - request_dish
+  - num_of_orders
+  - additional_stuff
+
+#slots:
+#  request_time:
+#    type: text
+#    influence_conversation: false
+#    mappings:
+#    - type: custom
+#
+#  request_day:
+#    type: text
+#    influence_conversation: false
+#    mappings:
+#      - type: custom
+#
+#  request_dish:
+#    type: text
+#    influence_conversation: false
+#    mappings:
+#      - type: custom
+#
+#  num_of_orders:
+#    type: text
+#    influence_conversation: false
+#    mappings:
+#      - type: custom
+#
+#  additional_stuff:
+#    type: text
+#    influence_conversation: false
+#    mappings:
+#      - type: custom
+
+actions:
+  - action_check_opening_hours
+  - action_menu
+  - action_opening_hours
+  - action_hello_world
+  - action_order
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
