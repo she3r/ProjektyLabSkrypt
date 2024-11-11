@@ -2,3 +2,4 @@
 /chatbot-restauracja/.rasa/cache
 /chatbot-restauracja/models
 chatbot-restauracja/orders.db
+chatbot-restauracja/tests_developer.txt
