@@ -1,0 +1,9 @@
+parameters:
+  keywords:
+    - acrCustomerReviewText
+    - ftCountdown
+  search_string:
+    - Support PlayStation 4
+    - Great Humanized Design
+  crawlbase_token: <token>
+  url: <url>

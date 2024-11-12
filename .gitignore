@@ -6,3 +6,16 @@ chatbot-restauracja/tests_developer.txt
 chatbot-restauracja/credentials.yml
 chatbot-restauracja/credentials.yml
 /chatbot-restauracja/.idea
+
+/crawler/.bundle/
+/crawler/.yardoc
+/crawler/_yardoc/
+/crawler/coverage/
+/crawler/doc/
+/crawler/pkg/
+/crawler/spec/reports/
+/crawler/tmp/
+
+/crawler/test
+/crawler/.idea
+crawler/config_develop.yaml

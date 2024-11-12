@@ -1,0 +1,20 @@
+C:\Ruby33-x64\bin\ruby.exe C:/Users/User/RubymineProjects/crawler/amazon_scraper.rb
+Basic extractions:
+Amazon Product URL: https://www.amazon.com/BENGOO-G9000-Controller-Cancelling-Headphones/dp/B01H6GUCCQ/ref=sr_1_1?_encoding=UTF8&content-id=amzn1.sym.12129333-2117-4490-9c17-6d31baf0582a&dib=eyJ2IjoiMSJ9.QlJRAsoIZ46R14EZUQiXoVqcIAcNj0KTmAJStCij9TV_yQvx-2YtcWUncq2y5J7eWvxVmBnrcblP9cTy1LE_BGctI5-EQ1ODiWPN-fAnoQgvR_DFz7fJHYd-EWicFKo9Y484lmiI3Jc1WE22Vtct9utF03Fk6y17V_LYbhan_d_hWLkpL6Dt8Um-EYk_l-FJNlX6CJqNgY2EFB396frv4VH7lRmfK_iMqMF3WKzD75k.1rDmgQ12RPm6OelcdUfjEp_HFBG1fuiJm9RyfVpSEpI&dib_tag=se&keywords=gaming%2Bheadsets&pd_rd_r=51be812d-9343-408e-afc9-75cd71c9f38a&pd_rd_w=78p1w&pd_rd_wg=hdLeN&pf_rd_p=12129333-2117-4490-9c17-6d31baf0582a&pf_rd_r=G7EFEATEX238VG269K4E&qid=1731442651&sr=8-1&th=1
+Amazon Product Name: BENGOO G9000 Stereo Gaming Headset for PS4 PC Xbox One PS5 Controller, Noise Cancelling Over Ear Headphones with Mic, LED Light, Bass Surround, Soft Memory Earmuffs (Blue)
+Amazon Product Price: 22.99
+Custom extractions:
+acrCustomerReviewText extracted: 107,468 ratings
+ftCountdown extracted: 9 hrs 15 mins
+------searching for Support PlayStation 4------
+<span class="a-list-item"> 【Multi-Platform Compatible】Support PlayStation 4, New Xbox One, PC, Nintendo 3DS, Laptop, PSP, Tablet, iPad, Computer, Mobile Phone. Please note you need an extra Microsoft Adapter (Not Included) when connect with an old version Xbox One controller.  </span>
+-----------------------
+------End search for Support PlayStation 4------
+
+------searching for Great Humanized Design------
+<span class="a-list-item"> 【Great Humanized Design】Superior comfortable and good air permeability protein over-ear pads, muti-points headbeam, acord with human body engineering specification can reduce hearing impairment and heat sweat.Skin friendly leather material for a longer period of wearing. Glaring LED lights desigend on the earcups to highlight game atmosphere.  </span>
+-----------------------
+------End search for Great Humanized Design------
+
+
+Process finished with exit code 0
