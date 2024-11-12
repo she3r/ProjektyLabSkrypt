@@ -165,21 +165,33 @@ nlu:
 
 - intent: place_order
   examples: |
-    - I would like to order a [Lasagne](request_dish) [with mashed potatoes](additional_stuff). And for my companions, please order the same for [3 people](num_of_orders).
-    - I would like to order a [vegetable stir-fry](request_dish). Can you recommend any sides? And please order the same for [2 companions](num_of_orders).
-    - I would like to order a [beef steak](request_dish) [with steamed broccoli](additional_stuff). What would you suggest for my companions? Please order the same for [4 people](num_of_orders).
-    - Can I order a [spaghetti carbonara](request_dish) [with garlic bread](additional_stuff)? And for my companions, please order the same for [2 people](num_of_orders).
-    - I would like to order a [chicken curry](request_dish) [with basmati rice](additional_stuff). For my companions, please order the same for [2 people](num_of_orders), but if possible, make it [extra spicy](additional_stuff).
-    - Do you have [lamb chops](request_dish)? I would like to order that [with roasted vegetables](additional_stuff). And for my companions, please order the same for [4 people](num_of_orders).
-    - I would like to order a [pasta primavera](request_dish), but please make it [without cheese](additional_stuff). And for my companions, please order the same for [3 people](num_of_orders).
-    
+    - I would like to order a [Lasagne](request_dish) [with mashed potatoes](additional_stuff). And for my companions, please order the same for [3](num_of_orders) people.
+    - I would like to order a [vegetable stir-fry](request_dish). Can you recommend any sides? And please order the same for [2](num_of_orders) companions.
+    - I would like to order a [beef steak](request_dish) [with steamed broccoli](additional_stuff). What would you suggest for my companions? Please order the same for [4](num_of_orders) people.
+    - Can I order a [spaghetti carbonara](request_dish) [with garlic bread](additional_stuff)? And for my companions, please order the same for [2](num_of_orders) people.
+    - I would like to order a [chicken curry](request_dish) [with basmati rice](additional_stuff). For my companions, please order the same for [2](num_of_orders) people, but if possible, make it [extra spicy](additional_stuff).
+    - Do you have [lamb chops](request_dish)? I would like to order that [with roasted vegetables](additional_stuff). And for my companions, please order the same for [4](num_of_orders) people.
+    - I would like to order a [pasta primavera](request_dish), but please make it [without cheese](additional_stuff). And for my companions, please order the same for [3](num_of_orders) people.
+    - I would like to order a [pizza](request_dish) [with extra cheese and pepperoni](additional_stuff) for myself. Please also add [2](num_of_orders) portions for my friends.
+    - Could I get a [burger](request_dish) [with lettuce, tomato, and a side of fries](additional_stuff)? Additionally, please include [3](num_of_orders) portions for my companions.
+    - I would like to order a [hot dog](request_dish) [with mustard and onions](additional_stuff). Also, please add [2](num_of_orders) portions for my friends joining me.
+    - Please bring me a [spaghetti carbonara](request_dish) [with extra parmesan and garlic bread](additional_stuff). I’d also like to order [4](num_of_orders) portions for my friends.
+    - I'd like to have a [Tiramisu](request_dish) [with mushrooms and olives](additional_stuff), please. Additionally, please include [2](num_of_orders) servings for my friends.
+    - Can I have a [burger](request_dish) [with bacon and avocado](additional_stuff)? Also, please add [2](num_of_orders) portions for my friends.
+    - I would like to order a [hot dog](request_dish) [with relish and sauerkraut](additional_stuff). Please also get [3](num_of_orders) servings for my friends.
+    - I would like a [pizza](request_dish) [with ham and pineapple](additional_stuff), please. Don’t forget to add [2](num_of_orders) portions for my companions.
+    - Can I order a [Tiramisu](request_dish) [with grilled onions and BBQ sauce](additional_stuff)?
+    - I’d like to have a [hot dog](request_dish) [with chili and cheese](additional_stuff). Please also add [3](num_of_orders) portions for my friends.
+
 - lookup: request_dish
   examples: |
     - lasagne
     - pizza
     - hot-dog
+    - hot dog
     - burger
     - spaghetti
+    - spaghetti carbonara
     - tiramisu
     - beef steak
     - lamb chops
@@ -194,10 +206,22 @@ nlu:
     - 3
     - 5
     - 10
+    - 1
+    - 4
 
 - lookup: additional_stuff
   examples: |
     - without cheese
+    - with extra cheese and pepperoni
+    - with lettuce, tomato, and a side of fries
+    - with extra parmesan and garlic bread
+    - with bacon and avocado
+    - with mushrooms and olives
+    - with mustard and onions
+    - with relish and sauerkraut
+    - with ham and pineapple
+    - with grilled onions and BBQ sauce
+    - with chili and cheese
     - with cheese
     - extra hot
     - less hot

@@ -27,8 +27,8 @@ Testy:
 Można przetestować kolejne zaprogramowane akcje czata.
 Składanie zamówienia:
 I’d like to have a hot dog with chili and cheese. Please also add 3 portions for my friends.
-Can I order a Tiramisu with grilled onions and BBQ sauce?
 I would like a pizza with ham and pineapple, please. Don’t forget to add 2 portions for my companions.
+Can I have a burger with bacon and avocado? Also, please add 2 portions for my friends.
 
 Zapytanie o menu:
 Could I see the menu, please?
@@ -36,11 +36,13 @@ What options do you have on the menu?
 Can you show me the menu?
 
 Zapytanie o godzinę otwarcia w konkretnej godzinie:
-Is the restaurant open at 6 PM?
-Does the restaurant stay open until 3 AM?
-Can I come to the restaurant at 13:00?
+Does the restaurant stay open until 2 PM?
+Can I come to the restaurant at 1 AM?
+Will the restaurant be open at 1 AM on Wednesday?
 
 Zapytanie o godziny otwarcia restauracji:
 What time does the restaurant open?
 Can you tell me the opening hours for the restaurant?
 When does the restaurant start serving?
+
+C. W pliku slack_proof_of_work.mkv można zobaczyć dowód na to, że czat działa i daje się zintegrować z platformą slack. Na github nie przesyłam ze względów bezpieczeństwa passów do aplikacji na której program był uruchamiany. Do tunelowania lokalnego serwera wykorzystałem ngrok

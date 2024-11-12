@@ -50,10 +50,10 @@ pipeline:
 - name: CountVectorsFeaturizer
   analyzer: char_wb
   min_ngram: 1
-  max_ngram: 4
+  max_ngram: 5
 - name: DIETClassifier
   entity_recognition: false
-  epochs: 100
+  epochs: 300
 - name: RegexEntityExtractor
   use_lookup_tables: true
 
